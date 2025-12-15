@@ -1,13 +1,13 @@
 const color = process.argv[2];
 
-if (!color) {
-  console.log("Please provide a color.");
-  process.exit(1);
+if (color === undefined) {
+  console.log("Unknown");
+  process.exit(0);
 }
 
-const colorInput = color.toLowerCase();
+const input = color.toLowerCase();
 
-switch (colorInput){
+switch (input) {
   case "red":
     console.log("Stop");
     break;
